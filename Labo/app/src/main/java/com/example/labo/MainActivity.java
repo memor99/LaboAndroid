@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
+        //Se declaran los botones por medio del id
         button = (Button) findViewById(R.id.boton1);
         button2 = (Button) findViewById(R.id.boton2);
         button3 = (Button) findViewById(R.id.boton3);
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         button5 = (Button) findViewById(R.id.boton5);
         button6 = (Button) findViewById(R.id.boton6);
 
+        //Se definen los sonidos de cada boton en especifico
         final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.beep1);
         final MediaPlayer mediaPlayer2 = MediaPlayer.create(this,R.raw.beep2);
         final MediaPlayer mediaPlayer3 = MediaPlayer.create(this,R.raw.beep3);
@@ -37,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer mediaPlayer5 = MediaPlayer.create(this,R.raw.beep5);
         final MediaPlayer mediaPlayer6 = MediaPlayer.create(this,R.raw.beep6);
 
-
+        //Se realizan las acciones cuando se hace click
+        //El media player inicia desde 0 cada vez que se clickea
+        // Se cambia el color y lo escrito dependiendo del estado actual
         button.setOnClickListener(new View.OnClickListener() {
             Drawable background= button.getBackground();
             public void onClick(View v) {
@@ -57,7 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        //Se realizan las acciones cuando se hace click
+        //El media player inicia desde 0 cada vez que se clickea
+        // Se cambia el color y lo escrito dependiendo del estado actual
         button2.setOnClickListener(new View.OnClickListener() {
             Drawable background= button2.getBackground();
             public void onClick(View v) {
@@ -75,6 +80,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Se realizan las acciones cuando se hace click
+        //El media player inicia desde 0 cada vez que se clickea
+        // Se cambia el color y lo escrito dependiendo del estado actual
         button3.setOnClickListener(new View.OnClickListener() {
             Drawable background= button3.getBackground();
             public void onClick(View v) {
@@ -92,6 +100,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Se realizan las acciones cuando se hace click
+        //El media player inicia desde 0 cada vez que se clickea
+        // Se cambia el color y lo escrito dependiendo del estado actual
         button4.setOnClickListener(new View.OnClickListener() {
             Drawable background= button4.getBackground();
             public void onClick(View v) {
@@ -109,6 +120,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Se realizan las acciones cuando se hace click
+        //El media player inicia desde 0 cada vez que se clickea
+        // Se cambia el color y lo escrito dependiendo del estado actual
         button5.setOnClickListener(new View.OnClickListener() {
             Drawable background= button5.getBackground();
             public void onClick(View v) {
@@ -127,6 +141,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //Se realizan las acciones cuando se hace click
+        //El media player inicia desde 0 cada vez que se clickea
+        // Se cambia el color y lo escrito dependiendo del estado actual
         button6.setOnClickListener(new View.OnClickListener() {
             Drawable background= button6.getBackground();
             public void onClick(View v) {
